@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="510.0" prefWidth="859.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloomfilter.drawController">
+   <children>
+      <LineChart fx:id="linechart" alternativeRowFillVisible="false" animated="false" createSymbols="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutX="509.0" layoutY="153.0" legendVisible="false" prefHeight="600.0" prefWidth="800.0" title="Bloomfilter" verticalGridLinesVisible="false" verticalZeroLineVisible="false" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="150.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <VBox layoutX="70.0" layoutY="38.0">
+         <children>
+            <Button fx:id="djb2" layoutX="70.0" layoutY="111.0" mnemonicParsing="false" onAction="#calculate" prefHeight="65.0" prefWidth="115.0" text="djb2" textAlignment="CENTER" />
+            <Button fx:id="sdbm" mnemonicParsing="false" onAction="#calsdbm" prefHeight="65.0" prefWidth="116.0" text="sdbm" />
+            <Button fx:id="lose" layoutX="82.0" layoutY="260.0" mnemonicParsing="false" onAction="#callose" prefHeight="65.0" prefWidth="115.0" text="lose" />
+         </children>
+      </VBox>
+      <Button fx:id="draw" layoutX="808.0" layoutY="46.0" mnemonicParsing="false" onAction="#draw" text="draw" AnchorPane.bottomAnchor="500.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="20.0" />
+      <Label fx:id="run" layoutX="96.0" layoutY="224.0" prefHeight="113.0" prefWidth="175.0" />
+      <Button fx:id="clear" layoutX="696.0" layoutY="20.0" mnemonicParsing="false" onAction="#clear" text="clear" AnchorPane.bottomAnchor="500.0" AnchorPane.leftAnchor="696.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="20.0" />
+   </children>
+</AnchorPane>
